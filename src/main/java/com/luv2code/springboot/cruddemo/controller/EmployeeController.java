@@ -11,7 +11,7 @@ import java.util.List;
 
 @Controller
 
-@RequestMapping("/employee")
+@RequestMapping("/employees")
 public class EmployeeController {
 
     private EmployeeService employeeService;
@@ -28,6 +28,6 @@ public class EmployeeController {
         // add to the spring model
         theModel.addAttribute("employees", theEmployees);
 
-        return "list-employee";
+        return "list-employees";
     }
 }
